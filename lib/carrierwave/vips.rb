@@ -65,8 +65,8 @@ module CarrierWave
           else
             raise('Invalid value for Orientation: ' + o.to_s)
         end
-        image.set('exif-Orientation', '')
-        image.set('exif-ifd0-Orientation', '')
+        image.set('exif-Orientation', o.to_s)
+        image.set('exif-ifd0-Orientation', o.to_s)
       end
     end
 
